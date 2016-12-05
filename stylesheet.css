@@ -1,0 +1,55 @@
+	/*Text & other properties*/
+body	{cursor:default; font-family:'Roboto Slab', serif; font-size:14px;}
+#loader	{font-size:200px; text-align:center;}
+.ribbon	{font-family:'BenchNine', sans-serif;}
+#header	{font-size:60px;}
+#title	{font-family:'BenchNine', sans-serif;}
+#square	{text-align:center;}
+.subtitle{font-family:'Roboto Slab', serif; font-weight:700; font-size:18px;}
+.phrase	{font-size:16px; text-align:center;}
+a	{text-decoration:none; cursor:default;}
+ul	{list-style-type:none; display:block;}
+p	{text-align:justify;}
+
+	/*Colour palette*/
+body	{background-color:#FFFFFF;	color:black;}
+#loader	{background-color:#FFFFFF;}
+#date	{				color:grey;}
+#title 	{background-color:#FFFFFF;}
+#welcome{background-color:#F0F0F0;}
+.divider{background-color:black;}
+a	{				color:black}
+::-moz-selection{background-color:#F0F0F0;		color:dimgrey;}
+
+	/*Sizes*/
+body	{margin:15px 30px 30px 30px;}
+#loader	{width:100%; height:100%;}
+#header	{height:100px; margin:0px 0px 10px 0px;}
+#square	{width:260.2px; height:100px;}
+.rect	{width:1023.8px; height:20px;}
+#title	{line-height:100%; padding:0px 0px 0px 22px;}
+.ribbon	{font-size:18px; width:100%;}
+.content{padding:0px;}
+#welcome{padding:10px; margin:10px 12px 10px 0px;}
+.column	{margin:10px;}
+#lColumn{margin:10px 0px 10px 10px;}
+.divider{width:1px; margin:10px 0px;}
+.rectph	{width:240.2px; height:14px;}
+#sources{border-style:solid; border-width:1px 0px 3px 0px; padding:10px 0px;}
+.sources{max-width:100%;}
+ul	{max-width:240.2px; padding:0px; margin:0px;}
+p	{max-width:240.2px; margin:0px;}
+
+	/*Position & Shadow*/
+#loader	{z-index:2; float:left; position:fixed; top:0px; left:0px;}
+#square	{float:left;}
+#title	{float:left;}
+#welcome{float:left;}
+.column	{float:left;}
+#lColumn{float:left;}
+.divider{float:left;}
+.right	{position:absolute; top:0px; right:0px;}
+.center	{margin-left:auto; margin-right:auto; text-align:center;}
+
+	/*Transitions & Animations*/
+#loader	{transition:background-color 2s; transition:opacity 2s 5s;}
