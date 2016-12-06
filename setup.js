@@ -16,7 +16,7 @@ document.styleSheets[0].insertRule(colr,0);
 var hei = document.getElementsByClassName("content")[0].clientHeight;
 var divdr = document.getElementsByClassName("divider");
 for (i = 0; i < divdr.length; i++) {
-   divdr[i].style.height = hei-95+"px";
+   divdr[i].style.height = hei-105+"px";
 }
 document.getElementById("loader").style.opacity = 0;
 function hide() {
