@@ -1,5 +1,5 @@
 var datum = new Date();
-var colour = [["#00CED1","#50FEF1"],["#FFA500","#FFF550"],["#32CD32","82FD82"],["#FF4500","#FF9550"],["#C71585","F765D5"],["#FF7F50","#FFCFA0"],["#FFD700","#FFF750"]];
+var colour = [["#00CED1","#50FEF1"],["#FFA500","#FFF550"],["#32CD32","#82FD82"],["#FF4500","#FF9550"],["#C71585","#F765D5"],["#FF7F50","#FFCFA0"],["#FFD700","#FFF750"]];
 document.getElementById("loader").style.backgroundColor = colour[datum.getDay()][0];
 var tag = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
 var monat = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
