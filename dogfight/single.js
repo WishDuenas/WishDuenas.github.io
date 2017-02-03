@@ -7,55 +7,9 @@
 //dist: distance between planes
 //psiz: plane image size
 //xoff: axis image offset
-var xmov = {
-   mvlx: function() {
-      pag = axis[pag-1][0];
-   },
-   mvsx: function() {
-      pag = axis[pag-1][1];
-   },
-   mvrx: function() {
-      pag = axis[pag-1][2];
-   }
-}
 //auxp: auxiliary page
 //aup2: auxiliary page 2
 //err: random error by the ai
-function xplay() {
-   var err = Math.floor(Math.random()*5);
-   if (err == 4) {
-      opt = Math.floor(Math.random()*3);
-   } else {
-      var auxp = axis[pag-1][0];
-      var aup2 = axis[pag-1][1];
-      if (axis[auxp-1][3] < axis[aup2-1][3]) {
-         aup2 = axis[pag-1][2];
-         if (axis[auxp-1][3] < axis[aup2-1][3]) {
-            opt = 0;
-         } else {
-            opt = 2;
-         }
-      } else {
-         auxp = axis[pag-1][2];
-         if (axis[aup2-1][3] < axis[auxp-1][3]) {
-            opt = 1;
-         } else {
-            opt = 2;
-         }
-      }
-   }
-   switch (opt) {
-      case 0:
-         xmov.mvlx();
-         break;
-      case 1:
-         xmov.mvsx();
-         break;
-      case 2:
-         xmov.mvrx();
-         break;
-   }
-}
 function mvll() {
    pag = allies[pag-1][0];
    cplo = allies[pag-1][3];
@@ -64,6 +18,7 @@ function mvll() {
    dist = allies[pag-1][5];
    chpg();
 }
+
 function mvsl() {
    pag = allies[pag-1][1];
    cplo = allies[pag-1][3];
@@ -72,6 +27,7 @@ function mvsl() {
    dist = allies[pag-1][5];
    chpg();
 }
+
 function mvrl() {
    pag = allies[pag-1][2];
    cplo = allies[pag-1][3];
@@ -80,6 +36,7 @@ function mvrl() {
    dist = allies[pag-1][5];
    chpg();
 }
+
 function chpg() {
    ctx.clearRect(0,0,500,500);
    psiz = sizes[dist][0];
