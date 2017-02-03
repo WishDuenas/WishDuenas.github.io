@@ -2,7 +2,7 @@ ctx = document.getElementById("dogfightUI").getContext("2d");
 
 function startGame() {
    document.getElementById("start").style.display = "none";
-   document.getElementById("controls").style.display = "block";
+   document.getElementById("player").style.display = "block";
 }
 
 function component(image, x, y, siz) {
