@@ -10,10 +10,13 @@
 <body>
 
 <div id="area"><canvas id="dogfightUI" width="500" height="500"></canvas></div>
+<div id="info"><div>Crimson health</div><div id="xhealth"></div><div>Teal health</div><div id="lhealth"></div></div>
 <div id="start" onclick="startGame()">Start Game</div>
-<div id="controls"><div class="move" onclick="mvll()">Left</div><div class="move" onclick="mvsl()">Straight</div><div class="move" onclick="mvrl()">Right</div></div>
-<div id="win">WIN</div>
-<div id="fail">FAIL</div>
+<div id="player"><span onclick="singleGame()">Single</span><span onclick="pvpGame()">PvP</span></div>
+<div id="controlsl"><div class="move" onclick="mvll()">Left</div><div class="move" onclick="mvsl()">Straight</div><div class="move" onclick="mvrl()">Right</div></div>
+  <div id="controlsx"><div class="move" onclick="mvlx()">Left</div><div class="move" onclick="mvsx()">Straight</div><div class="move" onclick="mvrx()">Right</div></div>
+<div id="win">TEAL WINS</div>
+<div id="fail">CRIMSON WINS</div>
 
 <img id="cp_e" src="cockpit/cp_e.png">
 <img id="cp_ne" src="cockpit/cp_ne.png">
