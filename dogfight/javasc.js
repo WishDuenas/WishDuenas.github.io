@@ -53,3 +53,51 @@ function pvpGame() {
    document.body.appendChild(code);
    mvbtns = document.getElementsByClassName("move");
 }
+
+var xmov = {
+   mvlx: function() {
+      pag = axis[pag-1][0];
+   },
+   mvsx: function() {
+      pag = axis[pag-1][1];
+   },
+   mvrx: function() {
+      pag = axis[pag-1][2];
+   }
+}
+
+function xplay() {
+   var err = Math.floor(Math.random()*5);
+   if (err == 4) {
+      opt = Math.floor(Math.random()*3);
+   } else {
+      var auxp = axis[pag-1][0];
+      var aup2 = axis[pag-1][1];
+      if (axis[auxp-1][3] < axis[aup2-1][3]) {
+         aup2 = axis[pag-1][2];
+         if (axis[auxp-1][3] < axis[aup2-1][3]) {
+            opt = 0;
+         } else {
+            opt = 2;
+         }
+      } else {
+         auxp = axis[pag-1][2];
+         if (axis[aup2-1][3] < axis[auxp-1][3]) {
+            opt = 1;
+         } else {
+            opt = 2;
+         }
+      }
+   }
+   switch (opt) {
+      case 0:
+         xmov.mvlx();
+         break;
+      case 1:
+         xmov.mvsx();
+         break;
+      case 2:
+         xmov.mvrx();
+         break;
+   }
+}
