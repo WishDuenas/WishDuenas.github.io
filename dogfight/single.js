@@ -11,25 +11,77 @@
 //aup2: auxiliary page 2
 //err: random error by the ai
 function mvll() {
-   pag = allies[pag-1][0];
+   mll();
+   msl();
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
    dist = allies[pag-1][5];
    chpg();
 }
-
 function mvsl() {
-   pag = allies[pag-1][1];
+   msl();
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
    dist = allies[pag-1][5];
    chpg();
 }
-
 function mvrl() {
-   pag = allies[pag-1][2];
+   mrl();
+   msl();
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvlls() {
+   mll();
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvsls() {
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvrls() {
+   mrl();
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvllf() {
+   mll();
+   msl();
+   msl();
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvslf() {
+   msl();
+   msl();
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvrlf() {
+   mrl();
+   msl();
+   msl();
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
