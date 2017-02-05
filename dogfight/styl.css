@@ -2,9 +2,9 @@ body	{cursor:default; font-family:"Fira Sans",sans-serif; color:white;}
 img   {display:none;}
 span	{padding:0px 10px;}
 
-#area	{border: solid 10px; border-color:teal; margin: 0px 20px 0px 200px; float:left; display:none;}
-#controlsl{display:none; width:420px; margin:0px 240px;}
-#controlsx{display:none; width:420px; margin:0px 240px;}
+#area	{border-style:solid; border-width:0px 10px; border-color:teal; margin:0px 20px 0px 200px; float:left; display:none; height:500px;}
+#controlsl{display:none; width:480px; margin:0px 220px;}
+#controlsx{display:none; width:480px; margin:0px 220px;}
 #fail	{background-color:crimson; font-size:200px; text-align:center; width:100%; height:100%; display:none; position:fixed; left:0px; top:0px; z-index:10;}
 #info {float:left; width:150px; display:none; text-align:center; background-color:black;}
 #lhealth{background-color:teal;}
@@ -13,4 +13,5 @@ span	{padding:0px 10px;}
 #win	{background-color:teal; font-size:200px; text-align:center; width:100%; height:100%; display:none; position:fixed; left:0px; top:0px; z-index:10;}
 #xhealth{background-color:crimson;}
 
-.move	{background-color:teal; width:100px; float:left; text-align:center; margin:10px 20px;}
+.move	{background-color:teal; width:140px; float:left; text-align:center; margin:0px 10px 10px 10px;}
+.speed	{width:480px; text-align:center; color:black; font-size:small;}
