@@ -1,21 +1,68 @@
 //for variables' meanings check single.js file
 function mvll() {
-   auxp = allies[pag-1][0];
+   auxp = pag;
+   vll();
+   vsl();
    epos = axis[pag-1][4];
    endt();
 }
 function mvsl() {
-   auxp = allies[pag-1][1];
+   auxp = pag;
+   vsl();
    epos = axis[pag-1][4];
    endt();
 }
 function mvrl() {
-   auxp = allies[pag-1][2];
+   auxp = pag;
+   vrl();
+   vsl();
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvlls() {
+   auxp = pag;
+   vll();
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvsls() {
+   auxp = pag;
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvrls() {
+   auxp = pag;
+   vrl();
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvllf() {
+   auxp = pag;
+   vll();
+   vsl();
+   vsl();
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvslf() {
+   auxp = pag;
+   vsl();
+   vsl();
+   epos = axis[pag-1][4];
+   endt();
+}
+function mvrlf() {
+   auxp = pag;
+   vrl();
+   vsl();
+   vsl();
    epos = axis[pag-1][4];
    endt();
 }
 function mvlx() {
-   pag = axis[auxp-1][0];
+   vlx();
+   vsx();
+   pag = auxp;
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
@@ -23,7 +70,8 @@ function mvlx() {
    chpg();
 }
 function mvsx() {
-   pag = axis[auxp-1][1];
+   vsx();
+   pag = auxp;
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
@@ -31,7 +79,67 @@ function mvsx() {
    chpg();
 }
 function mvrx() {
-   pag = axis[auxp-1][2];
+   vrx();
+   vsx();
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvlxs() {
+   vlx();
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvsxs() {
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvrxs() {
+   vrx();
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvlxf() {
+   vrx();
+   vsx();
+   vsx();
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvsxf() {
+   vsx();
+   vsx();
+   pag = auxp;
+   cplo = allies[pag-1][3];
+   epos = allies[pag-1][4];
+   cpxo = axis[pag-1][3];
+   dist = allies[pag-1][5];
+   chpg();
+}
+function mvrxf() {
+   vrx();
+   vsx();
+   vsx();
+   pag = auxp;
    cplo = allies[pag-1][3];
    epos = allies[pag-1][4];
    cpxo = axis[pag-1][3];
