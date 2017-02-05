@@ -56,13 +56,15 @@ function pvpGame() {
 
 var xmov = {
    mvlx: function() {
-      pag = axis[pag-1][0];
+      mlx();
+      msx();
    },
    mvsx: function() {
-      pag = axis[pag-1][1];
+      msx();
    },
    mvrx: function() {
-      pag = axis[pag-1][2];
+      mrx();
+      msx();
    }
 }
 
@@ -100,4 +102,23 @@ function xplay() {
          xmov.mvrx();
          break;
    }
+}
+
+function mll() {
+   pag = allies[pag-1][0];
+}
+function msl() {
+   pag = allies[pag-1][1];
+}
+function mrl() {
+   pag = allies[pag-1][2];
+}
+function mlx() {
+   pag = axis[pag-1][0];
+}
+function msx() {
+   pag = axis[pag-1][1];
+}
+function mrx() {
+   pag = axis[pag-1][2];
 }
