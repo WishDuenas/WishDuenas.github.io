@@ -184,3 +184,21 @@ function chpg() {
    document.getElementById("lhealth").innerHTML = llife;
    document.getElementById("xhealth").innerHTML = xlife;
 }
+function vll() {
+   auxp = allies[auxp-1][0];
+}
+function vsl() {
+   auxp = allies[auxp-1][1];
+}
+function vrl() {
+   auxp = allies[auxp-1][2];
+}
+function vlx() {
+   auxp = axis[auxp-1][0];
+}
+function vsx() {
+   auxp = axis[auxp-1][1];
+}
+function vrx() {
+   auxp = axis[auxp-1][2];
+}
